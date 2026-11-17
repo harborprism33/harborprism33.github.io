@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒色91-成分拆解与调酒实录</title>
+<meta name="description" content="酒色91是一个拆解鸡尾酒配比与酒体色泽的栏目，记录经典配方改动、浸渍与糖浆用量、杯型与冰型对出杯的影响，附试喝记录、问题答疑和配方对照清单供复核。">
+<meta name="keywords" content="酒色91">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f1230'/%3E%3Cpath d='M14 18h36L36 38v12l-8 4V38z' fill='none' stroke='%23e8b04b' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M20 44h16' stroke='%23c2402e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "酒色91",
+  "description": "鸡尾酒配比与酒体色泽拆解栏目",
+  "inLanguage": "zh-CN",
+  "publisher": {"@type": "Organization", "name": "酒色91"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "内格罗尼里金巴利减到20毫升还成立吗",
+      "acceptedAnswer": {"@type": "Answer", "text": "酒体仍偏红，但苦尾变短、甜味上浮，喝起来更接近轻苦开胃酒。想保留原结构，30毫升金巴利配30毫升甜味美思更稳，比例改动需同步减糖。"}
+    },
+    {
+      "@type": "Question",
+      "name": "澄清牛奶潘趣的乳清需要几层滤纸",
+      "acceptedAnswer": {"@type": "Answer", "text": "双层滤纸加咖啡滤杯足够，单层容易带浑浊颗粒。滤完静置两小时再装瓶，冷藏可放三天，酒体颜色会从奶白转成浅琥珀。"}
+    },
+    {
+      "@type": "Question",
+      "name": "糖浆熬到多少度不容易结晶",
+      "acceptedAnswer": {"@type": "Answer", "text": "1:1糖浆加热到糖完全溶解即可，不必沸腾；2:1浓糖浆可到105℃左右。容器消毒后冷藏，表面滴几滴柠檬汁降低结晶概率。"}
+    },
+    {
+      "@type": "Question",
+      "name": "冰球为什么在杯里裂成两半",
+      "acceptedAnswer": {"@type": "Answer", "text": "温差过大或冰体内部有气泡。脱模后先放冷藏十分钟回温，再入杯，裂纹会明显减少；气泡多说明冻冰时水未排气。"}
+    },
+    {
+      "@type": "Question",
+      "name": "浸渍金酒用新鲜果皮还是干果皮",
+      "acceptedAnswer": {"@type": "Answer", "text": "新鲜果皮出油快，8到12小时即可，超过24小时苦味上浮；干果皮风味更收敛，适合泡48小时做基底，颜色也更浅。"}
+    },
+    {
+      "@type": "Question",
+      "name": "无酒精版本的色泽怎么补",
+      "acceptedAnswer": {"@type": "Answer", "text": "用洛神花茶或蝶豆花茶调色，前者偏宝石红，后者遇酸转紫。补色液用量控制在15毫升以内，过量会盖住柑橘与草本。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#120d1a;
+  --bg-soft:#1b1426;
+  --card:#221a2f;
+  --card-2:#2a2039;
+  --line:#3a2d4c;
+  --ink:#f2e9df;
+  --ink-2:#c9bcd2;
+  --ink-3:#9b8caa;
+  --gold:#e8b04b;
+  --gold-2:#f3cd82;
+  --red:#c2402e;
+  --red-2:#e06a4f;
+  --green:#7fb08a;
+  --radius:14px;
+  --radius-s:8px;
+  --space:20px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --font-title:"Songti SC","Noto Serif SC","STSong",Georgia,serif;
+  --font-body:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --header-offset:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--header-offset)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-body);font-size:16px;line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold-2);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* 吸顶区 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  background:linear-gradient(90deg,#3a1420,#5a1c22 55%,#3a1420);
+  border-bottom:1px solid #6d2a2a;
+  font-size:13.5px;color:#f6d9c6;
+}
+.announce .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding-top:7px;padding-bottom:7px}
+.announce .tag{
+  flex:0 0 auto;background:var(--red);color:#fff;font-weight:700;
+  font-size:11.5px;letter-spacing:.12em;padding:2px 8px;border-radius:4px;
+}
+.announce time{color:#ffd9a8;font-variant-numeric:tabular-nums}
+.announce a{color:#ffce8a;border-bottom:1px dotted #ffce8a}
+header.site{
+  background:rgba(18,13,26,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand svg{width:40px;height:40px}
+.brand-txt{font-family:var(--font-title);font-size:22px;font-weight:700;letter-spacing:.06em;color:var(--ink)}
+.brand-sub{display:block;font-size:10.5px;letter-spacing:.28em;color:var(--ink-3);font-weight:400;margin-top:-2px}
+nav.main{flex:1 1 auto;min-width:0}
+.nav-list{display:flex;gap:4px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.nav-list a{
+  display:block;padding:6px 10px;border-radius:6px;color:var(--ink-2);
+  font-size:14.5px;white-space:nowrap;
+}
+.nav-list a:hover{background:var(--card);color:var(--gold-2);text-decoration:none}
+.nav-list a.active{color:var(--gold);background:#2c2038}
+.menu-btn{
+  display:none;background:var(--card);color:var(--ink);border:1px solid var(--line);
+  border-radius:8px;padding:7px 12px;font-size:14px;cursor:pointer;font-family:inherit;
+}
+.head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:170px;background:#241b32;border:1px solid var(--line);color:var(--ink);
+  border-radius:20px;padding:7px 12px;font-size:14px;font-family:inherit;
+}
+.search input::placeholder{color:var(--ink-3)}
+.search button{
+  position:absolute;right:3px;top:3px;bottom:3px;width:30px;border:none;border-radius:16px;
+  background:var(--gold);color:#241a10;cursor:pointer;font-size:14px;line-height:1;
+}
+.btn-cta{
+  background:linear-gradient(180deg,var(--red-2),var(--red));color:#fff;font-weight:700;
+  padding:8px 15px;border-radius:20px;font-size:14px;white-space:nowrap;
+}
+.btn-cta:hover{text-decoration:none;filter:brightness(1.08)}
+#searchMsg{
+  position:absolute;top:44px;left:0;right:0;background:var(--card-2);border:1px solid var(--line);
+  padding:10px 12px;border-radius:8px;font-size:13px;color:var(--ink-2);display:none;z-index:70;
+}
+#searchMsg.show{display:block}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 420px at 80% -10%,rgba(194,64,46,.30),transparent 65%),
+  radial-gradient(700px 400px at 8% 110%,rgba(232,176,75,.16),transparent 60%),
+  var(--bg-soft);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;padding-top:52px;padding-bottom:52px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.22em;color:var(--gold);border:1px solid #584224;padding:4px 10px;border-radius:20px}
+.hero h1{
+  font-family:var(--font-title);font-size:clamp(34px,9.2vw,58px);line-height:1.15;
+  margin:18px 0 6px;letter-spacing:.04em;
+}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-lede{font-size:16.5px;color:var(--ink-2);max-width:36em;margin:10px 0 22px}
+.hero-lede b{color:var(--ink)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:15px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink);transition:transform .15s;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--gold)}
+.btn.primary{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#2a1c0a;border-color:transparent}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px;list-style:none;margin:0}
+.hero-stats li{font-size:13px;color:var(--ink-3)}
+.hero-stats b{display:block;font-family:var(--font-title);font-size:22px;color:var(--gold-2);line-height:1.3}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 16px 34px rgba(0,0,0,.5))}
+.hero-cap{font-size:12px;color:var(--ink-3);text-align:center;margin-top:6px;letter-spacing:.05em}
+
+/* 通用板块 */
+main{padding-bottom:40px}
+section.sec{padding:46px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h2{
+  font-family:var(--font-title);font-size:clamp(22px,5.4vw,29px);margin:0;letter-spacing:.03em;
+}
+.sec-head h2::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--red);margin-right:10px;vertical-align:middle;transform:translateY(-2px)}
+.sec-head .hint{font-size:13px;color:var(--ink-3)}
+.lead{color:var(--ink-2);font-size:15.5px;margin:0 0 20px;max-width:62em}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;margin:0;padding:0}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.ov-card h3{margin:0 0 8px;font-size:16.5px;color:var(--gold-2);font-family:var(--font-title)}
+.ov-card p{margin:0;font-size:14px;color:var(--ink-2)}
+.ov-card .k{display:inline-block;margin-top:12px;font-size:12.5px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:8px;width:100%}
+
+/* 精选 */
+.picks{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.pick-main{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.pick-main img{aspect-ratio:16/8;width:100%;object-fit:cover}
+.pick-body{padding:18px 20px}
+.pick-body .pill{font-size:12px;color:#2a1c0a;background:var(--gold);padding:2px 9px;border-radius:20px;font-weight:700}
+.pick-body h3{font-family:var(--font-title);font-size:21px;margin:12px 0 8px}
+.pick-body p{margin:0;color:var(--ink-2);font-size:14.5px}
+.pick-side{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+.pick-side li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px}
+.pick-side h4{margin:0 0 5px;font-size:15.5px;color:var(--ink)}
+.pick-side span{font-size:12.5px;color:var(--ink-3)}
+
+/* 最新更新 */
+.updates{list-style:none;margin:0;padding:0;border-left:2px solid #3f3154}
+.updates li{position:relative;padding:0 0 20px 22px}
+.updates li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--gold)}
+.updates time{display:block;font-size:12.5px;color:var(--gold);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.updates h3{margin:4px 0 4px;font-size:16px}
+.updates p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;list-style:none;margin:0;padding:0}
+.cats a{
+  display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:16px 14px;color:var(--ink);transition:transform .15s,border-color .15s;
+}
+.cats a:hover{transform:translateY(-3px);text-decoration:none;border-color:var(--gold)}
+.cats b{display:block;font-size:15px;margin-bottom:5px;color:var(--gold-2)}
+.cats span{font-size:12.5px;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.deep .cols{display:grid;grid-template-columns:2.05fr .95fr;gap:34px;align-items:start}
+.deep article h2{font-family:var(--font-title);font-size:clamp(23px,5.6vw,31px);margin:0 0 6px}
+.deep .byline{font-size:13px;color:var(--ink-3);margin:0 0 20px}
+.deep h3{font-family:var(--font-title);font-size:19px;margin:28px 0 8px;color:var(--gold-2)}
+.deep p{margin:0 0 13px;color:#ded3e3;font-size:15.5px}
+.deep p b{color:var(--ink)}
+.verdict{
+  border-left:3px solid var(--red);background:#2a1c2a;border-radius:0 var(--radius-s) var(--radius-s) 0;
+  padding:14px 18px;margin:18px 0;font-size:15.5px;color:var(--ink);
+}
+.verdict strong{color:var(--gold-2)}
+.checklist{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:9px}
+.checklist li{display:grid;grid-template-columns:26px 1fr;gap:10px;background:var(--card);border:1px solid var(--line);padding:11px 14px;border-radius:var(--radius-s);font-size:14.5px;color:var(--ink-2)}
+.checklist .num{font-family:var(--font-title);color:var(--gold);font-weight:700}
+table.compare{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:14px}
+table.compare caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:8px}
+table.compare th,table.compare td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+table.compare th{background:#2b2138;color:var(--gold-2);font-weight:600}
+table.compare td{color:var(--ink-2)}
+.aside{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:sticky;top:calc(var(--header-offset) + 12px)}
+.aside h3{font-size:16px;margin:0 0 12px;color:var(--gold-2);font-family:var(--font-title)}
+.aside nav ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.aside nav a{display:block;padding:7px 10px;border-left:2px solid transparent;font-size:14px;color:var(--ink-2);border-radius:0 6px 6px 0}
+.aside nav a:hover{background:#2c2139;text-decoration:none;color:var(--ink)}
+.aside nav a.active{color:var(--gold);border-left-color:var(--gold);background:#2c2139}
+.aside .fact{margin-top:16px;border-top:1px dashed var(--line);padding-top:12px;font-size:13px;color:var(--ink-3)}
+.aside .fact b{color:var(--ink-2)}
+
+/* 体验指南 */
+.steps{counter-reset:step;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.steps li{counter-increment:step;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 16px 56px;position:relative}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:16px;top:16px;
+  font-family:var(--font-title);font-size:19px;color:var(--gold);font-weight:700;
+}
+.steps h3{margin:0 0 6px;font-size:16px}
+.steps p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:900px}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);padding:0 16px}
+details[open]{border-color:#5b4750;background:var(--card-2)}
+summary{cursor:pointer;list-style:none;padding:14px 30px 14px 0;font-size:15.5px;font-weight:600;position:relative;color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:12px;font-size:19px;color:var(--gold)}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 15px;font-size:14.5px;color:var(--ink-2)}
+
+/* 用户评论 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;list-style:none;margin:0;padding:0}
+.comment{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px}
+.comment p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.comment footer{font-size:12.5px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:9px;display:flex;justify-content:space-between;gap:8px}
+.comment footer b{color:var(--gold-2);font-weight:600}
+.comment.warn{border-color:#5a3a2a}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.news article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start}
+.news img{width:96px;height:96px;object-fit:cover;border-radius:8px}
+.news time{font-size:12.5px;color:var(--gold)}
+.news h3{margin:3px 0 5px;font-size:15.5px}
+.news p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* 相关推荐标签 */
+.tags{display:flex;flex-wrap:wrap;gap:9px;list-style:none;margin:0;padding:0}
+.tags a{display:inline-block;background:#241b32;border:1px solid var(--line);color:var(--ink-2);padding:7px 13px;border-radius:20px;font-size:13.5px}
+.tags a:hover{border-color:var(--gold);color:var(--gold-2);text-decoration:none}
+
+/* 榜单 */
+.rank{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none;margin:0;padding:0}
+.rank li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px}
+.rank .no{font-family:var(--font-title);font-size:22px;color:var(--gold);text-align:center}
+.rank h3{margin:0;font-size:15px}
+.rank span{font-size:12.5px;color:var(--ink-3)}
+.rank .no.top{color:var(--red-2)}
+
+/* 引语 */
+.quote-card{
+  background:linear-gradient(135deg,#2a2039,#20172b);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px 24px;margin:20px 0;
+}
+.quote-card blockquote{margin:0;font-family:var(--font-title);font-size:18px;line-height:1.7;color:var(--ink)}
+.quote-card figcaption{margin-top:10px;font-size:13px;color:var(--ink-3)}
+
+/* 页脚 */
+footer.site{background:#0e0a15;border-top:1px solid var(--line);padding:44px 0 26px;margin-top:10px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px;margin-bottom:28px}
+.foot-brand .brand-txt{font-size:20px}
+.foot-brand p{font-size:13.5px;color:var(--ink-3);margin:10px 0 0;max-width:25em}
+.foot-col h3{font-size:13.5px;letter-spacing:.12em;color:var(--gold);margin:0 0 10px;font-weight:600}
+.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.foot-col a{font-size:13.5px;color:var(--ink-2)}
+.foot-note{border-top:1px solid var(--line);padding-top:18px;font-size:12.5px;color:var(--ink-3);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:80;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:var(--card-2);color:var(--gold);font-size:19px;cursor:pointer;
+  opacity:0;pointer-events:none;transition:opacity .2s;
+}
+#toTop.show{opacity:1;pointer-events:auto}
+
+/* 响应式 */
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:26px;padding-top:38px;padding-bottom:38px}
+  .hero-art{max-width:420px;margin:0 auto}
+  .overview-grid{grid-template-columns:1fr 1fr}
+  .picks{grid-template-columns:1fr}
+  .deep .cols{grid-template-columns:1fr}
+  .aside{position:static;order:2;margin-top:22px}
+  .cats{grid-template-columns:1fr 1fr}
+  .comments{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--header-offset:104px}
+  .site .wrap{padding-top:10px;padding-bottom:10px;gap:10px}
+  .menu-btn{display:inline-block}
+  nav.main{order:5;flex-basis:100%;display:none}
+  nav.main.open{display:block}
+  .nav-list{flex-direction:column;gap:2px;padding-bottom:8px}
+  .nav-list a{padding:9px 10px}
+  .head-tools{order:4;margin-left:auto}
+  .search input{width:130px}
+  .btn-cta{display:none}
+  section.sec{padding:34px 0}
+  .overview-grid,.cats,.comments,.news,.rank,.steps{grid-template-columns:1fr}
+  .news article{grid-template-columns:80px 1fr}
+  .news img{width:80px;height:80px}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-stats{gap:18px}
+  .hero-stats b{font-size:19px}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce">
+    <div class="wrap">
+      <span class="tag">配方更新</span>
+      <span>11月6日更新：内格罗尼三版对照加入“金巴利20毫升”试喝记录，糖浆浓度表补入105℃档。<time datetime="2026-11-06">2026-11-06</time> · <a href="/#deep">查看拆解</a></span>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="酒色91 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#221a2f" stroke="#3a2d4c"/>
+          <path d="M14 18h36L36 38v12l-8 4V38z" fill="none" stroke="#e8b04b" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M20 44h16" stroke="#c2402e" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="45" cy="20" r="3" fill="#e06a4f"/>
+        </svg>
+        <span class="brand-txt">酒色91<span class="brand-sub">MIX &amp; HUE</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <ul class="nav-list">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">经典配方</a></li>
+          <li><a href="/#updates">本周更新</a></li>
+          <li><a href="/#cats">风味分类</a></li>
+          <li><a href="/#deep">配方拆解</a></li>
+          <li><a href="/#guide">操作指南</a></li>
+          <li><a href="/#faq">常见疑问</a></li>
+          <li><a href="/#rank">酒单榜单</a></li>
+        </ul>
+      </nav>
+      <div class="head-tools">
+        <div class="search">
+          <label for="q" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内搜索</label>
+          <input id="q" type="search" placeholder="搜配方/糖浆/杯型" autocomplete="off">
+          <button id="searchBtn" aria-label="提交搜索">⌕</button>
+          <div id="searchMsg" role="status" aria-live="polite"></div>
+        </div>
+        <a class="btn-cta" href="/#picks">取一份配方卡</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="hero-eyebrow">配比 · 色泽 · 出杯记录</span>
+        <h1>酒色<em>91</em></h1>
+        <p class="hero-lede">把一杯酒拆成<b>毫升、温度、糖度与色度</b>四件事。这里有内格罗尼的三版对照、洛神花糖浆的红度实测，也有冰球裂纹和澄清牛奶潘趣的浑浊记录。每条改动都附试喝时间与杯型。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="/#deep">读内格罗尼拆解</a>
+          <a class="btn" href="/#updates">看本周更新</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>46</b>份配方对照卡</li>
+          <li><b>12</b>类浸渍与糖浆记录</li>
+          <li><b>2026-11-06</b>最近一次杯测</li>
+          <li><b>8</b>个风味频道</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 420 340" role="img" aria-label="三只不同比例的鸡尾酒杯并排，分别呈深红、金橙、浅粉三色酒体">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#e06a4f"/><stop offset="1" stop-color="#8a1f22"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f3cd82"/><stop offset="1" stop-color="#c98a1f"/>
+            </linearGradient>
+            <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f2c9cf"/><stop offset="1" stop-color="#b36a7c"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="210" cy="308" rx="176" ry="16" fill="#0b0810" opacity=".7"/>
+          <!-- 杯1 古典杯 -->
+          <g>
+            <path d="M52 110h96l-8 122a16 16 0 0 1-16 15H76a16 16 0 0 1-16-15z" fill="#1a1322" stroke="#5b4750" stroke-width="2"/>
+            <path d="M60 168h80l-6 62a12 12 0 0 1-12 11H78a12 12 0 0 1-12-11z" fill="url(#g1)"/>
+            <rect x="86" y="150" width="28" height="28" rx="6" fill="#cfe4ea" opacity=".85" transform="rotate(14 100 164)"/>
+            <path d="M52 110h96" stroke="#8a6a44" stroke-width="3"/>
+          </g>
+          <!-- 杯2 高球 -->
+          <g>
+            <path d="M168 66h84l-6 166a14 14 0 0 1-14 13h-44a14 14 0 0 1-14-13z" fill="#1a1322" stroke="#5b4750" stroke-width="2"/>
+            <path d="M176 132h68l-4 98a10 10 0 0 1-10 9h-40a10 10 0 0 1-10-9z" fill="url(#g2)"/>
+            <rect x="196" y="118" width="26" height="26" rx="5" fill="#dff0f4" opacity=".8" transform="rotate(-12 209 131)"/>
+            <circle cx="206" cy="200" r="3" fill="#fff6d8" opacity=".9"/>
+            <circle cx="224" cy="216" r="2.4" fill="#fff6d8" opacity=".8"/>
+            <circle cx="214" cy="178" r="2" fill="#fff6d8" opacity=".7"/>
+          </g>
+          <!-- 杯3 蝶形杯 -->
+          <g>
+            <path d="M300 96h78c0 50-22 74-39 82v26l16 10v8h-48v-8l16-10v-26c-17-8-39-32-39-82z" fill="#1a1322" stroke="#5b4750" stroke-width="2"/>
+            <path d="M308 110h62c-2 34-18 52-31 58-13-6-29-24-31-58z" fill="url(#g3)"/>
+            <path d="M307 132h64" stroke="#f2e9df" stroke-width="1.4" opacity=".5"/>
+          </g>
+          <text x="100" y="300" text-anchor="middle" fill="#9b8caa" font-size="12" font-family="sans-serif">30·30·30</text>
+          <text x="210" y="300" text-anchor="middle" fill="#9b8caa" font-size="12" font-family="sans-serif">45·15·冰</text>
+          <text x="339" y="300" text-anchor="middle" fill="#9b8caa" font-size="12" font-family="sans-serif">20·30·30</text>
+        </svg>
+        <p class="hero-cap">内格罗尼三种配比：酒体由深红转向浅粉，苦尾随之缩短</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 领域概览 -->
+  <section class="sec" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>领域概览：一杯酒的四个变量</h2>
+        <span class="hint">配比 / 温度 / 糖度 / 色度</span>
+      </div>
+      <p class="lead">鸡尾酒的稳定出杯通常由四组数字决定：基酒与辅料的毫升比、稀释水量（摇和约20%—25%）、糖浆的糖水比例、以及决定观感的色度。任一项偏移，风味就换一副面孔。下面三块是入门最常被问到的判断依据。</p>
+      <ul class="overview-grid">
+        <li class="ov-card">
+          <h3>毫升比决定骨架</h3>
+          <p>内格罗尼 30:30:30 是等份结构，苦、甜、酒感三线并行；改成 45:15:30 后金酒占四成，甜味退到背景，适合配重口味小食。</p>
+          <span class="k">参照：2026-10-29 杯测记录</span>
+        </li>
+        <li class="ov-card">
+          <h3>稀释量决定温度曲线</h3>
+          <p>摇和 12 秒出杯温度约 2℃，稀释 22%；搅拌 30 秒约 1℃，稀释 18%。同一配方，摇和版入口更松，搅拌版收口更紧。</p>
+          <span class="k">参照：11月2日温度计读数</span>
+        </li>
+        <li class="ov-card">
+          <h3>糖度与色度互相牵连</h3>
+          <p>2:1 浓糖浆比 1:1 甜度高约一倍，用量却少一半，酒体颜色不易被稀释。洛神花糖浆 15 毫升即可把浅金酒体推到宝石红。</p>
+          <span class="k">参照：糖浆浓度对照表</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 精选内容推荐 -->
+  <section class="sec" id="picks">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>精选内容推荐：五份值得照做的配方卡</h2>
+        <span class="hint">每条附改动点与试喝日期</span>
+      </div>
+      <div class="picks">
+        <article class="pick-main">
+          <img src="https://picsum.photos/seed/negroni91/900/460" width="900" height="460" loading="lazy" alt="三只古典杯并排，酒体由深红到浅粉，杯口各放一片橙皮">
+          <div class="pick-body">
+            <span class="pill">本周主推</span>
+            <h3>内格罗尼减苦版：金巴利20毫升的边界在哪</h3>
+            <p>把金巴利从30毫升压到20毫升，甜味美思维持30毫升，苦尾从 8 秒缩到 3 秒。搭配 5 厘米手切冰，稀释更慢。三版并排试喝记录于 10月29日、11月3日、11月6日，杯型统一用 300 毫升古典杯。</p>
+          </div>
+        </article>
+        <ul class="pick-side">
+          <li>
+            <h4>澄清牛奶潘趣：乳清过滤三层法</h4>
+            <span>双层滤纸 + 冷藏静置 2 小时 · 10月31日</span>
+          </li>
+          <li>
+            <h4>洛神花糖浆红度实测：15 毫升的临界</h4>
+            <span>色卡比对，超过 20 毫升盖住柑橘 · 11月1日</span>
+          </li>
+          <li>
+            <h4>干浸渍金酒：新鲜果皮 12 小时止损</h4>
+            <span>苦味上浮时间点记录 · 11月4日</span>
+          </li>
+          <li>
+            <h4>无酒精版尼格罗尼：茶汤补色的三种走法</h4>
+            <span>蝶豆花遇酸转紫的用量区间 · 11月5日</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="sec" id="updates">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>最新更新：本周新增的实测条目</h2>
+        <span class="hint">按发布顺序倒排</span>
+      </div>
+      <ol class="updates">
+        <li>
+          <time datetime="2026-11-06">2026-11-06</time>
+          <h3>内格罗尼三版对照补入金巴利20毫升组</h3>
+          <p>新增第三版，杯型统一 300 毫升古典杯，冰为 5 厘米手切方冰。苦尾时长、入口温度、稀释比例三项并列，方便逐项复核。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-05">2026-11-05</time>
+          <h3>无酒精尼格罗尼：蝶豆花茶遇酸转色区间</h3>
+          <p>茶汤 40 毫升配柠檬汁 10 毫升时呈紫红，配 15 毫升转深紫且酸感压过草本。洛神花茶版本颜色偏橘红，观感更接近原版。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-04">2026-11-04</time>
+          <h3>浸渍金酒：新鲜果皮超过24小时的苦味起点</h3>
+          <p>同一批金酒分 8、12、24、36 小时四组取样。12 小时出油最饱满，24 小时后白瓤苦味明显上浮，36 小时带涩。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-02">2026-11-02</time>
+          <h3>摇和与搅拌的温度、稀释双表</h3>
+          <p>摇和 12 秒出杯 2℃，稀释 22%；搅拌 30 秒出杯 1℃，稀释 18%。同一份配方两种做法，酒体色泽深浅差约半个色阶。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="sec" id="cats">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>风味分类：按你要解决的问题找</h2>
+        <span class="hint">8 个频道</span>
+      </div>
+      <ul class="cats">
+        <li><a href="/#deep"><b>苦味平衡</b><span>金巴利、苦精、龙胆根的加减法</span></a></li>
+        <li><a href="/#picks"><b>糖浆浓度</b><span>1:1、2:1、105℃ 三档差异</span></a></li>
+        <li><a href="/#guide"><b>浸渍与萃取</b><span>果皮、香料、茶汤的时间窗</span></a></li>
+        <li><a href="/#updates"><b>澄清技法</b><span>牛奶澄清、明胶、滤纸层数</span></a></li>
+        <li><a href="/#faq"><b>冰块与杯型</b><span>冰球裂纹、方冰、蝶形杯</span></a></li>
+        <li><a href="/#rank"><b>低酒精路线</b><span>开胃酒、雪莉、味美思基底</span></a></li>
+        <li><a href="/#comments"><b>无酒精替代</b><span>茶汤补色、酸度重建</span></a></li>
+        <li><a href="/#related"><b>家庭出杯</b><span>工具清单、冷藏保存、出品节奏</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="sec deep" id="deep">
+    <div class="wrap">
+      <div class="cols">
+        <article>
+          <h2>深度解析：先动糖，再动苦</h2>
+          <p class="byline">配方对照 · 杯测记录 2026-10-29 至 2026-11-06</p>
+
+          <p>内格罗尼的等份结构被反复改写，但多数改动只盯着金巴利。10月29日到11月6日，做了三组并排试喝，结论比预想的更直接：<b>想让一杯酒变“轻”，先减甜味美思，不是减金巴利</b>。把金巴利从30毫升压到20毫升，苦尾从8秒缩到3秒，可甜味立刻上浮，尾段发黏；把甜味美思从30毫升减到22毫升、金巴利维持30毫升，苦尾仍有6秒，酒体却明显收紧。</p>
+
+          <div class="verdict">
+            <strong>可被反驳的判断：</strong>在内格罗尼里，甜味美思承担的是“结构填充”而非“甜味来源”。减它，酒体收窄但不塌；减金巴利，苦味退场却让糖分无处安放。若有人坚持“减苦才是减重”，可对照 11月3日那组 20:30:30 的记录：入口更软，但回温后甜腻感提前 4 分钟出现。
+          </div>
+
+          <h3>三组配比的核对表</h3>
+          <table class="compare">
+            <caption>杯型统一 300 毫升古典杯，冰为 5 厘米手切方冰，出杯温度记录于 11月6日 20:40</caption>
+            <thead>
+              <tr><th>配比（金酒:金巴利:美思）</th><th>苦尾时长</th><th>入口温度</th><th>回温后变化</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>30 : 30 : 30（等份）</td><td>8 秒</td><td>2℃</td><td>甜苦并行，20 分钟平衡</td></tr>
+              <tr><td>45 : 15 : 30（重酒感）</td><td>3 秒</td><td>2℃</td><td>酒感上浮，甜味退到背景</td></tr>
+              <tr><td>30 : 30 : 22（减甜）</td><td>6 秒</td><td>1.5℃</td><td>结构收紧，苦尾干净</td></tr>
+              <tr><td>20 : 30 : 30（减苦）</td><td>3 秒</td><td>2℃</td><td>回温 12 分钟甜腻感明显</td></tr>
+            </tbody>
+          </table>
+          <p>表里两组“3 秒苦尾”走向完全不同：45:15:30 靠酒精度压住甜，20:30:30 靠减少苦味留出甜。前者能撑到冰化完，后者在冰融三分之一时开始发软。这不是口感偏好问题，稀释曲线摆在那——摇和/搅拌环节的 18%—22% 稀释量，会把减苦版的糖分浓度进一步推高。</p>
+
+          <h3>规则前后变化：澄清技法的三层滤纸</h3>
+          <p>9月版本的澄清牛奶潘趣只写“滤纸过滤”，10月31日复测发现单层滤纸会带出浑浊颗粒，静置两小时后瓶底仍有细絮。改成双层滤纸加咖啡滤杯，乳清透光度提高，酒体从奶白转浅琥珀。代价是过滤时间从 25 分钟拉长到 50 分钟，中途滤纸堵塞需要换一次。11月1日的记录写明：滤液静置 2 小时再装瓶，冷藏三天内风味稳定，第四天出现轻微酸感。</p>
+
+          <h3>说法差异：糖浆到底该熬到多少度</h3>
+          <p>两种常见做法：一是 1:1 糖浆只加热到糖完全溶解，不必沸腾；二是 2:1 浓糖浆加热到 105℃。前者冷藏保存约两周，后者可放一个月，但甜度高、用量需减半。10月30日的对照里，同一杯古典鸡尾酒分别用两种糖浆各 10 毫升，1:1 版酒体更薄、颜色更浅，2:1 版入口更圆但盖住了苦精的草本尾。选择取决于配方里糖的位置：调味还是结构。</p>
+
+          <h3>可核对的三项拆解</h3>
+          <ol class="checklist">
+            <li><span class="num">01</span><span>看毫升比：等份结构的苦、甜、酒感三线并行；任一项超过 40%，另外两项就被压成背景。</span></li>
+            <li><span class="num">02</span><span>看稀释曲线：摇和 12 秒稀释 22%，搅拌 30 秒稀释 18%；减苦版对稀释更敏感，冰化即散。</span></li>
+            <li><span class="num">03</span><span>看糖度来源：1:1 糖浆偏调味，2:1 糖浆偏结构；用 2:1 时，甜味美思的量应同步下调 15% 左右。</span></li>
+          </ol>
+
+          <figure class="quote-card">
+            <blockquote>“减金巴利最省事，也最容易把一杯酒做成甜水。真正要动的是糖的位置。”</blockquote>
+            <figcaption>— 11月6日杯测手记，第 3 轮，杯温 2℃</figcaption>
+          </figure>
+
+          <p>把判断拆成可核对的结构后，剩下的是操作顺序：先定糖度来源（1:1 还是 2:1），再定苦味占比（金巴利 15—30 毫升区间），最后才调基酒。顺序反了，每次微调都会牵动另外两项，试喝记录也就失去可比性。</p>
+        </article>
+
+        <aside class="aside" aria-label="本页目录与数据说明">
+          <h3>本页目录</h3>
+          <nav aria-label="栏目导航">
+            <ul id="tocList">
+              <li><a href="/#overview">领域概览</a></li>
+              <li><a href="/#picks">精选内容推荐</a></li>
+              <li><a href="/#updates">最新更新</a></li>
+              <li><a href="/#cats">风味分类</a></li>
+              <li><a href="/#deep">深度解析</a></li>
+              <li><a href="/#guide">体验指南</a></li>
+              <li><a href="/#faq">常见疑问</a></li>
+              <li><a href="/#comments">用户评论</a></li>
+              <li><a href="/#news">相关资讯</a></li>
+              <li><a href="/#rank">酒单榜单</a></li>
+              <li><a href="/#related">相关推荐</a></li>
+            </ul>
+          </nav>
+          <div class="fact">
+            <p><b>数据口径：</b>毫升为量酒器读数，温度用探针式温度计测出杯中心，稀释比例按出杯前后重量差折算。</p>
+            <p><b>试喝人数：</b>每轮 3 人独立记录，取中位值。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="sec" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>体验指南：家里第一次做内格罗尼的六步</h2>
+        <span class="hint">工具清单在最后</span>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>先备 5 厘米方冰</h3>
+          <p>家用制冰盒多为 3 厘米，稀释过快。用保温杯冻 24 小时，脱模后冷藏回温 10 分钟再切，裂纹少一半。</p>
+        </li>
+        <li>
+          <h3>量酒器读数看凹液面</h3>
+          <p>30 毫升量酒器读到刻度线时，实际约 28—29 毫升。三份配料都按同一读法，误差才不会累积。</p>
+        </li>
+        <li>
+          <h3>搅拌 30 秒，别摇</h3>
+          <p>搅拌稀释 18%，摇和 22%。内格罗尼要的是清晰线条，摇和会把苦味打散，出杯后 5 分钟就浑。</p>
+        </li>
+        <li>
+          <h3>杯口橙皮要现拧</h3>
+          <p>橙皮精油喷在杯口外侧，不要挤进酒里。挤入后苦尾会多 2 秒，且盖住金巴利的草本香。</p>
+        </li>
+        <li>
+          <h3>记下出杯温度</h3>
+          <p>探针温度计插到杯中心，读数 1—2℃ 为正常。高于 3℃ 说明冰量不足或搅拌不够。</p>
+        </li>
+        <li>
+          <h3>15 分钟内喝完</h3>
+          <p>冰化到三分之一时，稀释比例升到 26% 以上，酒体会明显发水。小杯型减少总冰量，节奏更好控。</p>
+        </li>
+      </ol>
+      <p class="lead" style="margin-top:20px">工具清单：量酒器 30/45 毫升、吧勺、300 毫升古典杯、5 厘米方冰、探针温度计、削皮刀。缺温度计时，可用出杯后 30 秒杯壁结霜程度粗略判断。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见疑问：配方里的数字怎么落地</h2>
+        <span class="hint">点开查看答案</span>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>内格罗尼里金巴利减到20毫升还成立吗</summary>
+          <p>酒体仍偏红，但苦尾变短、甜味上浮，喝起来更接近轻苦开胃酒。想保留原结构，30毫升金巴利配30毫升甜味美思更稳；比例改动后需同步减糖，否则回温阶段甜腻感明显。</p>
+        </details>
+        <details>
+          <summary>澄清牛奶潘趣的乳清需要几层滤纸</summary>
+          <p>双层滤纸加咖啡滤杯足够，单层容易带浑浊颗粒。滤完静置两小时再装瓶，冷藏可放三天；第四天起出现轻微酸感，酒体颜色会从奶白转成浅琥珀。</p>
+        </details>
+        <details>
+          <summary>糖浆熬到多少度不容易结晶</summary>
+          <p>1:1 糖浆加热到糖完全溶解即可，不必沸腾；2:1 浓糖浆可到 105℃ 左右。容器消毒后冷藏，表面滴几滴柠檬汁降低结晶概率，取用时用干净勺。</p>
+        </details>
+        <details>
+          <summary>冰球为什么在杯里裂成两半</summary>
+          <p>温差过大或冰体内部有气泡。脱模后先放冷藏十分钟回温再入杯，裂纹会明显减少；气泡多说明冻冰时水未排气，可先煮沸再冻。</p>
+        </details>
+        <details>
+          <summary>浸渍金酒用新鲜果皮还是干果皮</summary>
+          <p>新鲜果皮出油快，8 到 12 小时即可，超过 24 小时苦味上浮；干果皮风味更收敛，适合泡 48 小时做基底，颜色也更浅。两种混用会拉长萃取窗口，需每天取样。</p>
+        </details>
+        <details>
+          <summary>无酒精版本的色泽怎么补</summary>
+          <p>用洛神花茶或蝶豆花茶调色，前者偏宝石红，后者遇酸转紫。补色液用量控制在 15 毫升以内，过量会盖住柑橘与草本；茶汤放凉后再加，避免二次稀释。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="sec" id="comments">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>用户评论：照做之后的偏差</h2>
+        <span class="hint">按时间倒序，保留原话</span>
+      </div>
+      <ul class="comments">
+        <li class="comment">
+          <p>按 30:30:22 做的，苦尾确实干净，但我用的味美思开瓶两个月了，氧化味把金巴利压住了。下次换新瓶再试。</p>
+          <footer><b>@阿棠</b><span>11月6日</span></footer>
+        </li>
+        <li class="comment">
+          <p>澄清那篇的 50 分钟过滤是真的，我中途堵了两次滤纸，最后乳清还是有点浑。静置两小时后清了，别急着装瓶。</p>
+          <footer><b>@滤纸杀手</b><span>11月5日</span></footer>
+        </li>
+        <li class="comment">
+          <p>洛神花糖浆 20 毫升那版我试了，颜色很漂亮，但柑橘香全没了。15 毫升是对的，超过就只剩红。</p>
+          <footer><b>@小杯量</b><span>11月4日</span></footer>
+        </li>
+        <li class="comment warn">
+          <p>45:15:30 对我来说酒味太冲，喝到一半冰化了才顺口。减酒感那版更合我口，虽然你们说回温会腻。</p>
+          <footer><b>@半杯就好</b><span>11月4日</span></footer>
+        </li>
+        <li class="comment">
+          <p>蝶豆花茶遇到柠檬汁转紫那段挺准，但我用 15 毫升柠檬汁时酸得发涩，10 毫升刚好。这个区间最好标一下。</p>
+          <footer><b>@茶汤派</b><span>11月3日</span></footer>
+        </li>
+        <li class="comment">
+          <p>冰球裂纹那条有用。冷藏回温十分钟后再入杯，确实少裂。之前一直以为是杯子太冷。</p>
+          <footer><b>@冰块工坊</b><span>11月2日</span></footer>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="sec" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>相关资讯：酒单与原料侧的动向</h2>
+        <span class="hint">只记可核对的时间与条目</span>
+      </div>
+      <div class="news">
+        <article>
+          <img src="https://picsum.photos/seed/vermouth97/200/200" width="200" height="200" loading="lazy" alt="两瓶甜味美思并排放在木质吧台上，标签朝向镜头">
+          <div>
+            <time datetime="2026-11-05">2026-11-05</time>
+            <h3>甜味美思开瓶后的风味窗口</h3>
+            <p>开瓶冷藏四周内草本清晰，第六周起出现明显氧化甜。用于内格罗尼时，超过两个月的瓶子建议先小杯试味再入配方。</p>
+          </div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/bitterbar88/200/200" width="200" height="200" loading="lazy" alt="吧台上排列五支苦精瓶，滴管朝向镜头">
+          <div>
+            <time datetime="2026-11-03">2026-11-03</time>
+            <h3>苦精三滴与五滴的差别</h3>
+            <p>同一杯古典鸡尾酒，三滴苦精尾段清爽，五滴出现药草压感。试喝记录显示差别在入口后 6 秒显现，杯温 2℃ 时最明显。</p>
+          </div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/coupe64/200/200" width="200" height="200" loading="lazy" alt="三只不同口径的鸡尾酒杯并排，杯口朝向右侧">
+          <div>
+            <time datetime="2026-11-01">2026-11-01</time>
+            <h3>蝶形杯与古典杯的出杯温差</h3>
+            <p>同一份配方，蝶形杯因液面大、升温快，3 分钟内温度升 2.5℃；古典杯升 1.2℃。香气释放前段更强，尾段稀释更快。</p>
+          </div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/hibiscus55/200/200" width="200" height="200" loading="lazy" alt="玻璃罐中浸泡的洛神花，酒液呈深红色">
+          <div>
+            <time datetime="2026-10-30">2026-10-30</time>
+            <h3>洛神花浸渍液的红度上限</h3>
+            <p>每 500 毫升基酒配 40 克干花，48 小时出宝石红；加到 60 克后颜色转暗，酸感盖过花香。浸渍液单独存放，按杯补色更可控。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="sec" id="rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>酒单榜单：本月回做率前六</h2>
+        <span class="hint">统计口径：10月9日—11月8日试做记录</span>
+      </div>
+      <ol class="rank">
+        <li><span class="no top">01</span><div><h3>减苦内格罗尼（20:30:30）</h3><span>回做 17 次 · 平均评分 4.2</span></div></li>
+        <li><span class="no top">02</span><div><h3>澄清牛奶潘趣</h3><span>回做 14 次 · 平均评分 4.4</span></div></li>
+        <li><span class="no">03</span><div><h3>洛神花糖浆金菲士</h3><span>回做 12 次 · 平均评分 4.0</span></div></li>
+        <li><span class="no">04</span><div><h3>无酒精尼格罗尼（茶汤版）</h3><span>回做 11 次 · 平均评分 3.8</span></div></li>
+        <li><span class="no">05</span><div><h3>干浸渍金酒马天尼</h3><span>回做 9 次 · 平均评分 4.1</span></div></li>
+        <li><span class="no">06</span><div><h3>苦精五滴古典鸡尾酒</h3><span>回做 8 次 · 平均评分 3.9</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="sec" id="related" style="border-bottom:none">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>相关推荐：继续往下查的词条</h2>
+        <span class="hint">按主题聚合</span>
+      </div>
+      <ul class="tags">
+        <li><a href="/#deep">内格罗尼等份比例</a></li>
+        <li><a href="/#picks">金巴利减量实验</a></li>
+        <li><a href="/#guide">5厘米方冰稀释率</a></li>
+        <li><a href="/#faq">2:1浓糖浆105℃</a></li>
+        <li><a href="/#updates">澄清牛奶潘趣滤纸</a></li>
+        <li><a href="/#news">甜味美思开瓶氧化</a></li>
+        <li><a href="/#picks">洛神花糖浆红度</a></li>
+        <li><a href="/#faq">干浸渍金酒时间窗</a></li>
+        <li><a href="/#guide">古典杯出杯温度</a></li>
+        <li><a href="/#news">蝶形杯升温速度</a></li>
+        <li><a href="/#comments">无酒精茶汤补色</a></li>
+        <li><a href="/#rank">苦精三滴与五滴</a></li>
+        <li><a href="/#updates">摇和搅拌稀释差</a></li>
+        <li><a href="/#comments">冰球裂纹回温</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand-txt">酒色91</span>
+        <p>记录毫升、温度与色度的偏差，供下一次出杯对照。</p>
+      </div>
+      <div class="foot-col">
+        <h3>配方频道</h3>
+        <ul>
+          <li><a href="/#deep">苦味平衡</a></li>
+          <li><a href="/#picks">糖浆浓度</a></li>
+          <li><a href="/#guide">浸渍与萃取</a></li>
+          <li><a href="/#updates">澄清技法</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>工具与记录</h3>
+        <ul>
+          <li><a href="/#guide">家庭出杯六步</a></li>
+          <li><a href="/#rank">本月回做榜</a></li>
+          <li><a href="/#news">原料动向</a></li>
+          <li><a href="/#faq">常见疑问</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>参与</h3>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#related">词条索引</a></li>
+          <li><a href="/#overview">变量说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>示例数据说明：配方毫升、温度与回做次数为演示用示例记录，非商业配方授权；实际出杯以自测为准。页面更新 2026-11-08，对应正文“11月6日内格罗尼三版对照”与“糖浆浓度表 105℃ 档”。</span>
+      <span>© 2026 酒色91</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('#tocList a'));
+  var targets = tocLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 150, current = null;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i] && targets[i].offsetTop <= pos){ current = tocLinks[i]; }
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if(current){ current.classList.add('active'); }
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  /* 本地查找 */
+  var q = document.getElementById('q');
+  var btn = document.getElementById('searchBtn');
+  var msg = document.getElementById('searchMsg');
+  var idx = [];
+  document.querySelectorAll('main h2, main h3, main summary, .updates h3, .rank h3, .news h3, .tags a').forEach(function(el){
+    var id = el.closest('section') ? el.closest('section').id : '';
+    idx.push({text: el.textContent.trim(), id: id, el: el});
+  });
+  function runSearch(){
+    var key = q.value.trim();
+    if(!key){ msg.classList.remove('show'); return; }
+    var hits = idx.filter(function(item){
+      return item.text.toLowerCase().indexOf(key.toLowerCase()) !== -1;
+    });
+    if(hits.length === 0){
+      msg.innerHTML = '没有找到与「' + key.replace(/[<>&]/g,'') + '」相关的配方条目。试试「内格罗尼」「糖浆」「澄清」或「冰球」。';
+    } else {
+      var parts = hits.slice(0,5).map(function(h){
+        return '<a href="/#' + h.id + '">' + h.text + '</a>';
+      });
+      msg.innerHTML = '找到 ' + hits.length + ' 条：' + parts.join(' · ');
+    }
+    msg.classList.add('show');
+  }
+  btn.addEventListener('click', runSearch);
+  q.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ runSearch(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search')){ msg.classList.remove('show'); }
+  });
+})();
+</script>
+</body>
+  </html>
